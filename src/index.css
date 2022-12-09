@@ -1,0 +1,32 @@
+@import url("@fontsource/cabin/variable.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full;
+  font-family: "CabinVariable", sans-serif;
+}
+html {
+  @apply bg-slate-800;
+  zoom: 80%;
+}
+body {
+  width: 21cm;
+  height: 29.7cm;
+  @apply mx-auto;
+  /* change the margins as you want them to be. */
+}
+
+@media print {
+  html {
+    zoom: unset;
+  }
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    /* change the margins as you want them to be. */
+  }
+}
