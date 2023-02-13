@@ -4,8 +4,8 @@ LABEL author="miti"
 
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm install --omit=dev \
-  && npm cache clean --force
+RUN npm install --omit=dev 
+RUN npm cache clean --force
 
 # Build Image
 FROM node:16-alpine3.16 AS BUILD
@@ -13,9 +13,9 @@ LABEL author="miti"
 
 WORKDIR /app
 COPY . .
-RUN npm install \
-  && npm run build \
-  && cd dist
+RUN npm install
+RUN npm run build
+RUN cd dist
 
 
 # Use an official Nginx image as the base image
