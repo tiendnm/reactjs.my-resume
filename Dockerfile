@@ -13,7 +13,7 @@ FROM nginx:alpine
 
 # Copy the static site files into the image
 COPY  --from=BUILD ./app/dist /var/www/html
-COPY  --from=BUILD ./app/config /etc/nginx/conf.d/
+COPY  --from=BUILD ./app/config /etc/nginx/
 
 # Set the working directory
 WORKDIR /var/www/html
