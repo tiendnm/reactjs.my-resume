@@ -1,12 +1,3 @@
-# Build BASE
-FROM node:16-alpine3.16 as BASE
-LABEL author="miti"
-
-WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm install --omit=dev 
-RUN npm cache clean --force
-
 # Build Image
 FROM node:16-alpine3.16 AS BUILD
 LABEL author="miti"
@@ -16,7 +7,6 @@ COPY . .
 RUN npm install
 RUN npm run build
 RUN cd dist
-
 
 # Use an official Nginx image as the base image
 FROM nginx:alpine
@@ -30,12 +20,3 @@ WORKDIR /var/www/html
 
 # Start the Nginx web server
 CMD ["nginx", "-g", "daemon off;"]
-
-
-
-
-
-
-
-# CMD npm run preview
-
