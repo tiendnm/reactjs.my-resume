@@ -1,0 +1,8 @@
+version: '3'
+services:
+  my-cv:
+    image: tiendnm/resume:latest
+    container_name: my-cv
+    restart: always
+    ports:
+      - "127.0.0.1:3003:80"

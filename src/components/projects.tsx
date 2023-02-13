@@ -8,22 +8,12 @@ const Projects = () => {
       <div className="text-sm mb-4">
         <List>
           <List.Item>
-            <p className="font-bold">
-              ADMIN TEMPLATE using ReactJS, Tailwindcss
-            </p>
+            <p className="font-bold">My portfolio website</p>
             <div className="underline">
-              <a href="https://github.com/tien-dnm/admin-template">
-                https://github.com/tien-dnm/admin-template
+              <a href="https://github.com/tien-dnm/my-portfolio">
+                https://github.com/tien-dnm/my-portfolio
               </a>
             </div>
-            <p className="font-medium">Main responsibility:</p>
-            <ul className="list-decimal list-inside">
-              <li>Create responsive components.</li>
-              <li>Design multi-level sidebar menu.</li>
-              <li>
-                Embed functional screen into tabs for convenient operation.
-              </li>
-            </ul>
           </List.Item>
         </List>
       </div>
