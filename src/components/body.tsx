@@ -6,19 +6,21 @@ import Skills from "./skills";
 
 const Body = () => {
   return (
-    <section id="cv-body" className="bg-white px-8 py-4 ">
-      <div className="mb-3">
+    <section
+      id="cv-body"
+      className="bg-white px-8 py-4 ">
+      <article className="mb-3">
         <CareerObjective />
-      </div>
-      <div className="mb-3">
+      </article>
+      <article className="mb-3">
         <Experience />
-      </div>
-      <div className="mb-3">
+      </article>
+      <article className="mb-3">
         <Skills />
-      </div>
-      <div className="mb-3">
+      </article>
+      <article className="mb-3">
         <Projects />
-      </div>
+      </article>
     </section>
   );
 };

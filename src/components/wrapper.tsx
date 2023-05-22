@@ -3,9 +3,11 @@ interface WrapperProps {
 }
 const Wrapper = ({ children }: WrapperProps) => {
   return (
-    <div id="cv-wrapper" className="h-full bg-white">
+    <main
+      id="cv-wrapper"
+      className="h-full bg-white">
       {children}
-    </div>
+    </main>
   );
 };
 export default Wrapper;
