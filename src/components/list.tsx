@@ -13,20 +13,7 @@ const List = ({ className, children }: ListProps) => {
 };
 
 const Item = ({ children }: ListItemProps) => {
-  return (
-    <li className="ml-4">
-      <div
-        className={clsx([
-          "absolute",
-          "w-2 h-2",
-          "bg-gray-500",
-          "border border-white",
-          "rounded-full mt-2 left-0 ",
-        ])}
-      ></div>
-      {children}
-    </li>
-  );
+  return <li>{children}</li>;
 };
 List.Item = Item;
 export default List;

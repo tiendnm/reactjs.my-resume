@@ -10,23 +10,21 @@ body,
   font-family: "CabinVariable", sans-serif;
 }
 html {
+  width: 100%;
+  height: 100%;
   @apply bg-slate-800;
-  zoom: 80%;
 }
 body {
-  width: 21cm;
-  height: 29.7cm;
+  width: 210mm;
+  height: 297mm;
   @apply mx-auto;
   /* change the margins as you want them to be. */
 }
 
 @media print {
-  html {
-    zoom: unset;
-  }
-  body {
-    width: 21cm;
-    height: 29.7cm;
-    /* change the margins as you want them to be. */
+  @page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
   }
 }
